@@ -1,0 +1,14 @@
+  <h1>This a test Sinatra application, riding Shotgun</h1>
+  	<div style='border: 3px dashed red'>
+  <% if @visitor %>  
+    Hello, <%= @visitor %>!
+  <% else %>
+    <form action="/hello">
+      My name is <%= @name %>.
+      What's your name?
+      <input type="text" name="name">
+      <input type="submit" value="Submit">
+    </form>
+  <% end %>
+  <img src='http://bit.ly/1eze8aE'>
+</div>
